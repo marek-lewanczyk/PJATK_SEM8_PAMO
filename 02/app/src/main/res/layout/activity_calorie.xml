@@ -10,23 +10,26 @@
         android:id="@+id/etAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wiek"
-        android:inputType="numberDecimal" />
+        android:hint="@string/hint_age"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/etWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Waga (kg)"
+        android:hint="@string/hint_weight_kg"
         android:inputType="numberDecimal"
+        android:importantForAutofill="no"
         android:layout_marginTop="8dp" />
 
     <EditText
         android:id="@+id/etHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wzrost (cm)"
+        android:hint="@string/hint_height_cm"
         android:inputType="numberDecimal"
+        android:importantForAutofill="no"
         android:layout_marginTop="8dp" />
 
     <RadioGroup
@@ -40,14 +43,14 @@
             android:id="@+id/rbMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mężczyzna"
+            android:text="@string/radio_male"
             android:checked="true" />
 
         <RadioButton
             android:id="@+id/rbFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kobieta"
+            android:text="@string/radio_female"
             android:layout_marginStart="16dp" />
     </RadioGroup>
 
@@ -61,7 +64,7 @@
         android:id="@+id/btnCalculateCalorie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Oblicz"
+        android:text="@string/btn_calculate"
         android:layout_marginTop="24dp" />
 
     <TextView

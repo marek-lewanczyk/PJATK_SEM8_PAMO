@@ -11,22 +11,24 @@
         android:id="@+id/etWeightBmi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Waga (kg)"
-        android:inputType="numberDecimal" />
+        android:hint="@string/hint_weight_kg"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/etHeightBmi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wzrost (cm)"
+        android:hint="@string/hint_height_cm"
         android:inputType="numberDecimal"
+        android:importantForAutofill="no"
         android:layout_marginTop="16dp" />
 
     <Button
         android:id="@+id/btnCalculateBmi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Oblicz"
+        android:text="@string/btn_calculate"
         android:layout_marginTop="24dp" />
 
     <TextView

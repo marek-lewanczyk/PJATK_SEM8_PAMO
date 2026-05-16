@@ -55,7 +55,7 @@ public class CalorieActivity extends AppCompatActivity {
                 String heightStr = etHeight.getText().toString();
 
                 if (TextUtils.isEmpty(ageStr) || TextUtils.isEmpty(weightStr) || TextUtils.isEmpty(heightStr)) {
-                    Toast.makeText(CalorieActivity.this, "Proszę uzupełnić wszystkie pola", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CalorieActivity.this, getString(R.string.error_fill_all_fields), Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -65,24 +65,13 @@ public class CalorieActivity extends AppCompatActivity {
 
                 boolean isMale = rbMale.isChecked();
 
-                double bmr;
-                if (isMale) {
-                    bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
-                } else {
-                    bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
-                }
+                double bmr = CalorieCalculator.calculateBmr(weight, height, age, isMale);
 
-                double pal = 1.2;
+                CalorieCalculator.ActivityLevel[] levels = CalorieCalculator.ActivityLevel.values();
                 int selectedPosition = spinnerActivity.getSelectedItemPosition();
-                if (selectedPosition == 1) {
-                    pal = 1.375;
-                } else if (selectedPosition == 2) {
-                    pal = 1.55;
-                } else if (selectedPosition == 3) {
-                    pal = 1.725;
-                }
+                CalorieCalculator.ActivityLevel level = levels[Math.min(selectedPosition, levels.length - 1)];
 
-                double tdee = bmr * pal;
+                double tdee = CalorieCalculator.calculateTdee(bmr, level);
                 int tdeeRounded = (int) Math.round(tdee);
 
                 tvResult.setText(String.format(Locale.getDefault(), "Twoje zapotrzebowanie to:\n%d kcal", tdeeRounded));

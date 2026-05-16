@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Historia BMI"
+        android:text="@string/title_bmi_history"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="4dp" />
@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Zmiany BMI w ciągu ostatnich 12 miesięcy"
+        android:text="@string/subtitle_bmi_history"
         android:textSize="14sp"
         android:textColor="#666666"
         android:layout_marginBottom="16dp" />
@@ -44,7 +44,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nadwaga (≥25)"
+            android:text="@string/legend_overweight"
             android:textSize="12sp"
             android:textColor="#666666"
             android:layout_marginEnd="16dp" />
@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Norma (18.5–24.9)"
+            android:text="@string/legend_normal"
             android:textSize="12sp"
             android:textColor="#666666" />
 

@@ -15,14 +15,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lista Zakupów"
+            android:text="@string/title_shopping_list"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Przepis: Spaghetti Bolognese"
+            android:text="@string/shopping_recipe_name"
             android:textSize="14sp"
             android:textColor="#757575"
             android:layout_marginTop="2dp" />
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Odznacz produkty, które już masz w koszyku"
+            android:text="@string/shopping_list_hint"
             android:textSize="13sp"
             android:textColor="#9E9E9E"
             android:layout_marginTop="8dp" />

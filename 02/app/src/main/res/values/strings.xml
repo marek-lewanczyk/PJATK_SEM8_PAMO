@@ -1,4 +1,33 @@
 <resources>
     <string name="app_name">01</string>
     <string name="logo">logo</string>
+
+    <!-- Main menu -->
+    <string name="btn_bmi">Kalkulator BMI</string>
+    <string name="btn_calorie">Zapotrzebowanie Kaloryczne</string>
+    <string name="btn_bmi_chart">Wykres BMI</string>
+    <string name="btn_shopping_list">Lista Zakupów</string>
+
+    <!-- BMI calculator -->
+    <string name="hint_weight_kg">Waga (kg)</string>
+    <string name="hint_height_cm">Wzrost (cm)</string>
+    <string name="btn_calculate">Oblicz</string>
+    <string name="error_fill_all_fields">Proszę uzupełnić wszystkie pola</string>
+    <string name="error_height_positive">Wzrost musi być większy od 0</string>
+
+    <!-- Calorie calculator -->
+    <string name="hint_age">Wiek</string>
+    <string name="radio_male">Mężczyzna</string>
+    <string name="radio_female">Kobieta</string>
+
+    <!-- BMI chart -->
+    <string name="title_bmi_history">Historia BMI</string>
+    <string name="subtitle_bmi_history">Zmiany BMI w ciągu ostatnich 12 miesięcy</string>
+    <string name="legend_overweight">Nadwaga (&#8805;25)</string>
+    <string name="legend_normal">Norma (18.5&#8211;24.9)</string>
+
+    <!-- Shopping list -->
+    <string name="title_shopping_list">Lista Zakupów</string>
+    <string name="shopping_recipe_name">Przepis: Spaghetti Bolognese</string>
+    <string name="shopping_list_hint">Odznacz produkty, które już masz w koszyku</string>
 </resources>
